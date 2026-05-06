@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion';
+export default function PageHeader({title,subtitle}){return <section className='pt-28 pb-16 bg-gradient-to-br from-navy to-sky text-white'><div className='max-w-6xl mx-auto px-4'><motion.h1 initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className='text-4xl md:text-5xl font-bold'>{title}</motion.h1><p className='mt-4 max-w-2xl'>{subtitle}</p></div></section>}
