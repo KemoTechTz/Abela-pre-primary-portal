@@ -1,2 +1,38 @@
 import { images } from './images';
-export const schoolConfig={schoolName:'Abela Pre & Primary School',tagline:'Nurturing Young Minds for a Brighter Future.',phone:'+255 XXX XXX XXX',email:'info@abelaschool.co.tz',address:'Dar es Salaam, Tanzania',officeHours:'Mon-Fri: 7:30 AM - 4:30 PM',socialLinks:[{label:'Facebook',url:'#'},{label:'Instagram',url:'#'},{label:'YouTube',url:'#'}],navigationLinks:[['Home','/'],['About','/about'],['Academics','/academics'],['Admissions','/admissions'],['School Life','/school-life'],['Gallery','/gallery'],['Parent Portal','/parent-portal'],['Contact','/contact']],stats:[['Happy Learners','250+'],['Dedicated Teachers','20+'],['Classrooms','12+'],['Years of Excellence','8+']],programs:[{title:'Pre-Primary Program',image:images.classroom,desc:'Play-based learning for ages 3-5 with language, social and motor skills development.'},{title:'Lower Primary',image:images.reading,desc:'Strong literacy and numeracy foundation with guided discovery and supportive teaching.'},{title:'Upper Primary',image:images.teacher,desc:'Confident, independent learners prepared for exams, leadership and future success.'}],facilities:['Bright Classrooms','Reading Corner','Playground','Computer Learning','Clean Dining Area','Safe School Environment'],testimonials:[{name:'Asha M.',text:'My daughter became confident in reading within one term. Teachers are caring and communicative.'},{name:'Peter K.',text:'The school is clean, disciplined, and warm. We always feel involved as parents.'}],faqs:[['What age can a child join pre-primary?','Children can join from age 3, depending on readiness and class availability.'],['How do parents apply?','Submit the inquiry form, schedule a visit, then complete registration after assessment.'],['Does the school provide meals?','Yes, we provide nutritious meals and supervise healthy routines daily.'],['How can parents contact the school?','Call, email, or submit the contact form. We respond within one business day.']],galleryItems:[{cat:'Classrooms',img:images.classroom,title:'Interactive Classroom'},{cat:'Learning',img:images.reading,title:'Reading Session'},{cat:'Play',img:images.play,title:'Outdoor Play'},{cat:'Events',img:images.events,title:'School Event'},{cat:'Teachers',img:images.teacher,title:'Teacher Support'}]}
+
+export const schoolConfig = {
+  schoolName: 'Abela Pre & Primary School',
+  tagline: 'Nurturing Young Minds for a Brighter Future.',
+  phone: '+255 XXX XXX XXX',
+  email: 'info@abelaschool.co.tz',
+  address: 'Dar es Salaam, Tanzania',
+  officeHours: 'Mon–Fri: 7:30 AM – 4:30 PM',
+  navigationLinks: [
+    ['Home', '/'], ['About', '/about'], ['Academics', '/academics'], ['Admissions', '/admissions'], ['School Life', '/school-life'], ['Gallery', '/gallery'], ['Parent Portal', '/parent-portal'], ['Contact', '/contact']
+  ],
+  stats: [
+    ['250+', 'Happy Learners'], ['20+', 'Dedicated Teachers'], ['12+', 'Classrooms'], ['8+', 'Years of Excellence']
+  ],
+  programs: [
+    { title: 'Pre-Primary Program', desc: 'Play-based foundation for ages 3–5 with language, confidence, and social growth.', image: images.classroom },
+    { title: 'Lower Primary', desc: 'Strong literacy and numeracy through guided exploration and project learning.', image: images.reading },
+    { title: 'Upper Primary', desc: 'Academic readiness, leadership habits, and preparation for future success.', image: images.teacher }
+  ],
+  faqs: [
+    ['What age can my child join pre-primary?', 'Most children join from age 3 depending on readiness and available seats.'],
+    ['How do I apply?', 'Submit inquiry, schedule a visit, complete assessment, and finalize registration.'],
+    ['Do you provide meals?', 'Yes, balanced meals and daily care routines are provided in a clean environment.']
+  ],
+  testimonials: [
+    ['Asha M.', 'My daughter grew in confidence and reading skills so quickly.'],
+    ['Peter K.', 'Strong discipline, warm teachers, and excellent parent communication.'],
+    ['Neema L.', 'Abela combines care and academic quality in a way we trust.']
+  ],
+  galleryItems: [
+    { cat: 'Classrooms', img: images.classroom, title: 'Interactive classroom' },
+    { cat: 'Learning', img: images.reading, title: 'Focused reading time' },
+    { cat: 'Play', img: images.play, title: 'Safe outdoor play' },
+    { cat: 'Events', img: images.event, title: 'School celebration' },
+    { cat: 'Teachers', img: images.teacher, title: 'Teacher support' }
+  ]
+};
