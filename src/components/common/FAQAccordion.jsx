@@ -1,2 +1,2 @@
 import { useState } from 'react';
-export default function FAQAccordion({ items }) { const [open, setOpen]=useState(0); return <div className='space-y-3'>{items.map(([q,a],i)=><div key={q} className='card-ui p-5'><button onClick={()=>setOpen(open===i?-1:i)} className='w-full text-left font-semibold'>{q}</button>{open===i&&<p className='mt-3 text-dark/75'>{a}</p>}</div>)}</div> }
+export default function FAQAccordion({items}){const [open,setOpen]=useState(0);return <div className='space-y-3'>{items.map(([q,a],i)=><div key={q} className='bg-white rounded-xl p-4'><button className='font-semibold w-full text-left' onClick={()=>setOpen(open===i?-1:i)}>{q}</button>{open===i&&<p className='mt-2 text-sm'>{a}</p>}</div>)}</div>}

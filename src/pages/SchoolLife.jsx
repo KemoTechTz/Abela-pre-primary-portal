@@ -1,2 +1,7 @@
-import PageHeader from '../components/common/PageHeader';import { images } from '../data/images';import ImageWithFallback from '../utils/ImageWithFallback';
-export default function SchoolLife(){return <main className='pt-20'><PageHeader title='School Life' subtitle='Balanced daily routines, creativity, play, and wellbeing.'/><section className='section container-ui grid md:grid-cols-3 gap-4'>{['Classroom Learning','Sports & Play','Clubs & Activities','Meals & Care','Events','Parent Communication'].map((t,i)=><div key={t} className='card-ui p-3'><ImageWithFallback src={[images.classroom,images.play,images.event][i%3]} alt={t} className='h-36 w-full object-cover rounded-2xl'/><p className='font-semibold mt-3'>{t}</p></div>)}</section></main>}
+import PageHeader from '../components/common/PageHeader';
+import ContactForm from '../components/forms/ContactForm';
+import AdmissionForm from '../components/forms/AdmissionForm';
+import { schoolConfig } from '../data/schoolConfig';
+import SectionHeading from '../components/common/SectionHeading';
+import ImageWithFallback from '../utils/ImageWithFallback';
+export default function SchoolLife(){return <main className='pt-16'><PageHeader title='SchoolLife' subtitle={schoolConfig.tagline}/><section className='max-w-6xl mx-auto px-4 py-12'><SectionHeading title='SchoolLife Page' subtitle='Premium frontend-only presentation page with responsive layout, strong content blocks, and smooth visual hierarchy.'/><div className='grid md:grid-cols-2 gap-6'><div className='bg-white rounded-2xl p-6 shadow'><p>This section presents key information for parents and visitors in a clear, trustworthy, and child-friendly format tailored for Abela Pre & Primary School.</p>{'SchoolLife'==='Admissions'&&<AdmissionForm/>}{'SchoolLife'==='Contact'&&<ContactForm/>}</div><ImageWithFallback src={schoolConfig.programs[1].image} alt='School environment' className='w-full h-80 rounded-2xl object-cover'/></div></section></main>}
