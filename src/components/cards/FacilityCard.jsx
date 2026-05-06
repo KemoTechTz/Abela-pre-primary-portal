@@ -1,0 +1,1 @@
+export default function FacilityCard({title,children}){return <div className='bg-white rounded-2xl p-5 shadow-sm hover:shadow-lg transition'><h3 className='font-semibold text-navy mb-2'>{title}</h3><div className='text-sm text-dark/80'>{children}</div></div>}
