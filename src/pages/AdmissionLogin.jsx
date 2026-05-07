@@ -1,0 +1,2 @@
+import PageTransition from '../components/common/PageTransition';import AdmissionLoginForm from '../components/forms/AdmissionLoginForm';
+export default function AdmissionLogin(){return <PageTransition><main className='pt-24 container-ui section'><h1 className='text-4xl'>Admission Login</h1><p className='mt-2 text-dark/75'>Frontend preview only. No real authentication backend is connected.</p><div className='mt-6 max-w-xl'><AdmissionLoginForm/></div></main></PageTransition>}

@@ -1,0 +1,1 @@
+export default function SectionHeader({eyebrow='Discover',title,subtitle}){return <div className='mb-10'><p className='text-xs uppercase tracking-[0.2em] text-sky font-semibold'>{eyebrow}</p><h2 className='text-3xl md:text-4xl mt-2'>{title}</h2>{subtitle&&<p className='mt-3 text-dark/75 max-w-2xl'>{subtitle}</p>}</div>}
