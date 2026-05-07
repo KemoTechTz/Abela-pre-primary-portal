@@ -1,0 +1,20 @@
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { buttonTap } from '../../utils/motion';
+
+export default function CTAButton({ to, label, secondary }) {
+  return (
+    <motion.div {...buttonTap} className='inline-block'>
+      <Link
+        to={to}
+        className={`group premium-button inline-flex items-center gap-2 ${secondary
+          ? 'bg-white/85 border border-navy/15 text-navy hover:bg-sky/10'
+          : 'bg-gradient-to-r from-gold to-[#ffd45c] text-navy shadow-lg shadow-gold/30 hover:shadow-gold/40 hover:-translate-y-0.5'}`}
+      >
+        {label}
+        <ArrowRight size={16} className='transition-transform group-hover:translate-x-1' />
+      </Link>
+    </motion.div>
+  );
+}
