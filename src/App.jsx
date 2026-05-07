@@ -7,7 +7,11 @@ import Navbar from './components/layout/Navbar';
 
 import About from './pages/About';
 import Academics from './pages/Academics';
+import AdmissionApplication from './pages/AdmissionApplication';
+import AdmissionLogin from './pages/AdmissionLogin';
+import AdmissionRegister from './pages/AdmissionRegister';
 import Admissions from './pages/Admissions';
+import Apply from './pages/Apply';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Home from './pages/Home';
@@ -17,18 +21,20 @@ import SchoolLife from './pages/SchoolLife';
 
 function App() {
   const location = useLocation();
-
   return (
     <>
       <ScrollToTop />
       <Navbar />
-
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/academics' element={<Academics />} />
           <Route path='/admissions' element={<Admissions />} />
+          <Route path='/apply' element={<Apply />} />
+          <Route path='/admission-login' element={<AdmissionLogin />} />
+          <Route path='/admission-register' element={<AdmissionRegister />} />
+          <Route path='/admission-application' element={<AdmissionApplication />} />
           <Route path='/school-life' element={<SchoolLife />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/parent-portal' element={<ParentPortal />} />
@@ -36,7 +42,6 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </AnimatePresence>
-
       <Footer />
     </>
   );
