@@ -2,3 +2,18 @@
 @tailwind base;@tailwind components;@tailwind utilities;
 @layer base{html,body,#root{height:100%}body{@apply bg-cream text-dark overflow-x-hidden font-['Inter']}h1,h2,h3,h4{@apply font-['Plus_Jakarta_Sans'] text-navy tracking-tight}}
 @layer components{.container-ui{@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8}.section{@apply py-16 md:py-24}.soft-card{@apply rounded-3xl border border-navy/10 bg-gradient-to-b from-white/95 to-white/80 shadow-[0_18px_40px_-24px_rgba(11,31,58,.35)]}.hover-lift{@apply transform-gpu transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-22px_rgba(11,31,58,.4)]}.premium-button{@apply rounded-full px-6 py-3 font-semibold transition-all duration-300 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-sky/60}.focus-ring{@apply focus:outline-none focus:ring-2 focus:ring-sky/60}.glass-panel{@apply bg-white/70 backdrop-blur-md border border-white/70}.card-ui{@apply soft-card hover-lift}}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { @apply bg-cream text-dark font-['Inter'] antialiased; }
+  h1,h2,h3,h4 { @apply font-['Plus_Jakarta_Sans'] tracking-tight text-navy; }
+}
+
+@layer components {
+  .container-ui { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-16 md:py-24; }
+  .card-ui { @apply bg-white/90 backdrop-blur rounded-3xl border border-navy/10 shadow-[0_10px_40px_-18px_rgba(11,31,58,.45)]; }
+}
