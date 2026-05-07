@@ -1,0 +1,2 @@
+import PageTransition from '../components/common/PageTransition';import AdmissionAccountForm from '../components/forms/AdmissionAccountForm';
+export default function AdmissionRegister(){return <PageTransition><main className='pt-24 container-ui section'><h1 className='text-4xl'>Admission Account Registration</h1><p className='mt-2 text-dark/75'>Frontend demo: account data is stored in localStorage only.</p><div className='mt-6 max-w-2xl'><AdmissionAccountForm/></div></main></PageTransition>}

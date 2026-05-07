@@ -1,0 +1,11 @@
+export const admissionFees=[
+['Nursery','TZS 50,000','TZS 350,000','TZS 120,000','TZS 520,000'],
+['Pre-Primary 1','TZS 50,000','TZS 380,000','TZS 130,000','TZS 560,000'],
+['Pre-Primary 2','TZS 50,000','TZS 400,000','TZS 140,000','TZS 590,000'],
+['Grade 1','TZS 60,000','TZS 450,000','TZS 150,000','TZS 660,000'],
+['Grade 2','TZS 60,000','TZS 470,000','TZS 150,000','TZS 680,000'],
+['Grade 3','TZS 60,000','TZS 490,000','TZS 160,000','TZS 710,000'],
+['Grade 4','TZS 70,000','TZS 520,000','TZS 170,000','TZS 760,000'],
+['Grade 5','TZS 70,000','TZS 550,000','TZS 180,000','TZS 800,000'],
+['Grade 6','TZS 70,000','TZS 580,000','TZS 190,000','TZS 840,000']
+];

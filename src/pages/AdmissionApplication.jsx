@@ -1,0 +1,2 @@
+import PageTransition from '../components/common/PageTransition';import AdmissionApplicationForm from '../components/forms/AdmissionApplicationForm';
+export default function AdmissionApplication(){return <PageTransition><main className='pt-24 container-ui section'><h1 className='text-4xl'>Admission Application Form</h1><p className='mt-2 text-dark/75'>Complete the details below to submit your frontend admission preview.</p><div className='mt-6'><AdmissionApplicationForm/></div></main></PageTransition>}

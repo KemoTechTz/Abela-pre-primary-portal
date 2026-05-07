@@ -1,0 +1,1 @@
+export default function PageHeader({ title, subtitle }) {return <section className='pt-28 pb-14 bg-gradient-to-b from-sky/20 to-cream'><div className='container-ui'><p className='text-xs uppercase tracking-[0.2em] text-sky font-semibold'>Abela School</p><h1 className='text-4xl md:text-5xl mt-2'>{title}</h1><p className='text-dark/80 mt-3 max-w-2xl'>{subtitle}</p></div></section>}

@@ -1,0 +1,9 @@
+export const ease=[0.22,1,0.36,1];
+export const fadeUp={hidden:{opacity:0,y:18,filter:'blur(6px)'},show:{opacity:1,y:0,filter:'blur(0px)',transition:{duration:0.45,ease}}};
+export const fadeIn={hidden:{opacity:0},show:{opacity:1,transition:{duration:0.4,ease}}};
+export const scaleIn={hidden:{opacity:0,scale:0.96},show:{opacity:1,scale:1,transition:{duration:0.35,ease}}};
+export const staggerContainer={hidden:{},show:{transition:{staggerChildren:0.08,delayChildren:0.04}}};
+export const pageTransition={initial:{opacity:0,y:12},animate:{opacity:1,y:0,transition:{duration:0.42,ease}},exit:{opacity:0,y:6,transition:{duration:0.26,ease:[0.4,0,1,1]}}};
+export const cardHover={rest:{y:0,scale:1,boxShadow:'0 10px 24px rgba(11,31,58,0.06)'},hover:{y:-6,scale:1.015,boxShadow:'0 24px 48px rgba(56,189,248,0.14)'},tap:{scale:0.985}};
+export const buttonTap={whileTap:{scale:0.98}};
+export const imageReveal={whileHover:{scale:1.04,transition:{duration:0.45,ease}}};
