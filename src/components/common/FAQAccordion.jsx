@@ -1,2 +1,4 @@
 import { useState } from 'react';import { motion, AnimatePresence } from 'framer-motion';
 export default function FAQAccordion({items}){const [open,setOpen]=useState(0);return <div className='space-y-3'>{items.map(([q,a],i)=><div key={q} className='soft-card p-5'><button onClick={()=>setOpen(open===i?-1:i)} className='w-full text-left font-semibold'>{q}</button><AnimatePresence>{open===i&&<motion.p initial={{height:0,opacity:0}} animate={{height:'auto',opacity:1}} exit={{height:0,opacity:0}} className='overflow-hidden mt-3 text-dark/75'>{a}</motion.p>}</AnimatePresence></div>)}</div>}
+import { useState } from 'react';
+export default function FAQAccordion({ items }) { const [open, setOpen]=useState(0); return <div className='space-y-3'>{items.map(([q,a],i)=><div key={q} className='card-ui p-5'><button onClick={()=>setOpen(open===i?-1:i)} className='w-full text-left font-semibold'>{q}</button>{open===i&&<p className='mt-3 text-dark/75'>{a}</p>}</div>)}</div> }
